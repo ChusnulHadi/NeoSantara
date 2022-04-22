@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import styledComponents from "styled-components";
+import styled from "styled-components";
 import { useState } from "react";
 
 
@@ -54,7 +54,7 @@ const Navigation = () => {
 
 export default Navigation;
 
-const Wraper = styledComponents.div`
+const Wraper = styled.div`
     overflow: hidden;
     background-color: orange;
     width: 100vw;
@@ -68,9 +68,14 @@ const Wraper = styledComponents.div`
         justify-content: space-between;
     }
 
+    @media (min-width: 500px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 `;
 
-const Button = styledComponents.div`
+const Button = styled.div`
 
     right: 0px;
 
@@ -91,7 +96,7 @@ const Button = styledComponents.div`
     }
     
 `;
-const Logo = styledComponents.div`
+const Logo = styled.div`
 
     margin: 0.5em 1em;
 
@@ -100,8 +105,8 @@ const Logo = styledComponents.div`
     }
 `
 
-const Nav = styledComponents.nav`
-    display:flex;
+const Nav = styled.nav`
+    display:none;
     flex-direction: column;
 
     transition: display 0.5s ease-in-out;
@@ -130,6 +135,20 @@ const Nav = styledComponents.nav`
             a {
                 text-decoration:none;
                 color:white;
+            }
+        }
+    }
+
+    @media (min-width: 500px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ul {
+            li {
+                display: inline;
+                margin: 2em 1em;
+
+                vertical-align: middle;
             }
         }
     }
