@@ -15,13 +15,11 @@ const Navigation = () => {
         }
     }
 
-    const screen = window.innerWidth;
-
     return (
 
         <Wraper>
             <div className="top">
-                <Logo>
+                <Logo onClick={window.scrollTo(Logo)}>
                     <img src="/assets/images/logoNSS.png" alt="Neo Santara Solusi" />
                 </Logo>
                 <Button onClick={menu}>
@@ -103,6 +101,10 @@ const Logo = styled.div`
     img {
         height: 3em;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 const Nav = styled.nav`
@@ -140,15 +142,29 @@ const Nav = styled.nav`
     }
 
     @media (min-width: 500px) {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         justify-content: space-between;
+
         ul {
+            background-color: transparent;
+            margin: 1.5em;
             li {
                 display: inline;
                 margin: 2em 1em;
 
-                vertical-align: middle;
+                &:hover {
+                    background-color: transparent;
+                }
+
+                a {
+                    &:hover {
+                        color: black;
+                        transition: 0.3s ease-in;
+
+                        border-bottom: 1px solid black;
+                    }
+                }
             }
         }
     }
