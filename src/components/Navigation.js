@@ -62,12 +62,9 @@ const Button = styledComponents.div`
 
     margin: 1em 1em;
 
-    svg {
-        color: white;
-    }
 
     &:hover {
-        background-color: white;
+        color: white;
     }
     
 `;
