@@ -38,7 +38,8 @@ const Navigation = () => {
             <Nav id="nav">
                 <ul>
                     <li>
-                        <a href="Home">Home</a>
+                        <Link to="Home">Home</Link>
+                        {/* <a href="Home">Home</a> */}
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -59,7 +60,6 @@ export default Navigation;
 
 const Wraper = styled.div`
     overflow: hidden;
-    /* background-color: ${color.yellow}; */
     /* width: 100vw; */
     margin: 1.5em;
     display: flex;
