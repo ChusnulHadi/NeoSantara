@@ -2,6 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { useState } from "react";
+// import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
+import { color } from "./colors";
 
 
 const Navigation = () => {
@@ -19,8 +22,10 @@ const Navigation = () => {
 
         <Wraper>
             <div className="top">
-                <Logo onClick={window.scrollTo(Logo)}>
-                    <img src="/assets/images/logoNSS.png" alt="Neo Santara Solusi" />
+                <Logo>
+                    <Link to="Home">
+                        <img src="/assets/images/logoNSS.png" alt="Neo Santara Solusi" />
+                    </Link>
                 </Logo>
                 <Button onClick={menu}>
                     {(isMenu) ?
@@ -33,7 +38,7 @@ const Navigation = () => {
             <Nav id="nav">
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="Home">Home</a>
                     </li>
                     <li>
                         <a href="#">About</a>
@@ -54,11 +59,21 @@ export default Navigation;
 
 const Wraper = styled.div`
     overflow: hidden;
-    background-color: orange;
-    width: 100vw;
-
+    /* background-color: ${color.yellow}; */
+    /* width: 100vw; */
+    margin: 1.5em;
     display: flex;
     flex-direction: column;
+
+    position: relative;
+    z-index: 10;
+
+    /* glassmorphism effect */
+    backdrop-filter: blur(18px) saturate(181%);
+    -webkit-backdrop-filter: blur(18px) saturate(181%);
+    background-color: rgba(255, 255, 255, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 
     .top {
         display: flex;
@@ -120,7 +135,7 @@ const Nav = styled.nav`
         margin: 0;
         text-align: center;
 
-        background-color: black;
+        background-color: ${color.darkblue};
 
         li {
             list-style-type:none;
@@ -137,10 +152,13 @@ const Nav = styled.nav`
             a {
                 text-decoration:none;
                 color:white;
+                
+                padding-bottom: 0.5em;
             }
         }
     }
 
+    /* desktop view */
     @media (min-width: 500px) {
         display: flex !important;
         flex-direction: row;
@@ -158,11 +176,14 @@ const Nav = styled.nav`
                 }
 
                 a {
+                    color: ${color.darkblue};
                     &:hover {
-                        color: black;
-                        transition: 0.3s ease-in;
+                        font-weight: bold;
+                        color: ${color.orange};
 
-                        border-bottom: 1px solid black;
+                        transition: 0.1s ease-in;
+
+                        border-bottom: 1.5px solid ${color.orange};
                     }
                 }
             }
