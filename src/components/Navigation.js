@@ -57,7 +57,7 @@ const Navigation = () => {
 
 export default Navigation;
 
-const Wraper = styled.div`
+const Wraper = styled.header`
     overflow: hidden;
     width: calc(100vw - 3em);
     margin: 1.5em;
