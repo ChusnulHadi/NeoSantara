@@ -43,7 +43,7 @@ const Navigation = () => {
                         <ButtonNav href="/">About</ButtonNav>
                     </li>
                     <li>
-                        <ButtonNav href="/">Partner</ButtonNav>
+                        <ButtonNav href="/">Services</ButtonNav>
                     </li>
                     <li>
                         <ButtonNav href="/">Carreer</ButtonNav>

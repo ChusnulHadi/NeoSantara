@@ -15,12 +15,12 @@ const About = () => {
             <p>
                 pelayanan dan pengalaman kami untuk memastikan kenyamanan anda
             </p>
-            <Title>
+            <Title data-aos={'fade-up'}>
                 <h1>Tentang Kami</h1>
             </Title>
-            <CompanyProfile>
+            <CompanyProfile data-aos={'fade-up'}>
                 <h1>Company Profile</h1>
-                <div>
+                <div data-aos={'fade-up'}>
                     <Left>
                         <img src='./assets/images/company-img.jpg' alt='company profiles' />
                     </Left>
