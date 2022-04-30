@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import 'aos';
 const About = () => {
     return (
         <Wrapper>
@@ -78,7 +79,15 @@ const Wrapper = styled.section`
     p {
         margin: 1em auto;
         max-width: 1000px;
+        width: 100%;
         letter-spacing: 0.125em;
+    }
+
+    @media (max-width: 600px) {
+        p {
+            text-align: justify;
+            padding: 0 2em;
+        }
     }
 
 `
