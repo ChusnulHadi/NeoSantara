@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import './loader.css';
 import reportWebVitals from './reportWebVitals';
 const App = React.lazy(() => import('./App'));
 
