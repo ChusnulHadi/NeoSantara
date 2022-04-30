@@ -2,29 +2,29 @@ import styled from 'styled-components';
 const About = () => {
     return (
         <Wrapper>
-            <h1>kami berfokus pada anda!</h1>
-            <p>
+            <h1 data-aos={'fade-up'}>kami berfokus pada anda!</h1>
+            <p data-aos={'fade-up'}>
                 bagi kami, pelanggan adalah prioritas utama
             </p>
-            <p>
+            <p data-aos={'fade-up'}>
                 kami menyediakan pelayanan yang terbaik dan relevan untuk meningkatkan kebutuhan digital anda
             </p>
-            <p>
+            <p data-aos={'fade-up'}>
                 terus berkomitmen untuk memberikan anda pengalaman terbaik dalam berjelajah internet menggunakan layanan kami
             </p>
-            <p>
+            <p data-aos={'fade-up'}>
                 pelayanan dan pengalaman kami untuk memastikan kenyamanan anda
             </p>
             <Title data-aos={'fade-up'}>
                 <h1>Tentang Kami</h1>
             </Title>
-            <CompanyProfile data-aos={'fade-up'}>
-                <h1>Company Profile</h1>
-                <div data-aos={'fade-up'}>
-                    <Left>
+            <CompanyProfile>
+                <h1 data-aos={'fade-up'}>Company Profile</h1>
+                <div>
+                    <Left data-aos={'fade-up'}>
                         <img src='./assets/images/company-img.webp' alt='company profiles' />
                     </Left>
-                    <Right>
+                    <Right data-aos={'fade-up'}>
                         <p>
                             <important>NEO SANTARA SOLUSI</important> adalah perusahan yang bergerak di bidang penyedia layanan internet dan mengatasi masalah IT di indonesia. 
                             <br />
@@ -37,9 +37,9 @@ const About = () => {
                 </div>
             </CompanyProfile>
             <Visi>
-                <h1>Visi dan Misi</h1>
+                <h1 data-aos={'fade-up'}>Visi dan Misi</h1>
                 <div>
-                    <Left>
+                    <Left data-aos={'fade-up'}>
                         <h2>Visi</h2>
                         <p>
                             visi kami adalah merealisasikan sebuah jaringan internet untuk mendukung perkembangan dari teknologi digital di seluruh pelosok negeri
@@ -55,7 +55,7 @@ const About = () => {
                             mendukung pemerintah untuk mengembangkan teknologi digital
                         </p>
                     </Left>
-                    <Right>
+                    <Right data-aos={'fade-up'}>
                         <img src='./assets/images/visi-img.webp' alt='visi & misi' />
                     </Right>
                 </div>

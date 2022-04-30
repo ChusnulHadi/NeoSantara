@@ -4,17 +4,17 @@ import styled from 'styled-components'
 const Home = () => {
     return (
         <Wrapper>
-            <Text data-aos={'fade-up'}>
-                <h1>
+            <Text>
+                <h1 data-aos={'fade-up'}>
                     neo santara solusi
                 </h1>
-                <p>
+                <p data-aos={'fade-up'}>
                     internet service provider yang menyediakan layanan internet dedicated untuk memenuhi kebutuhan digital anda di era modern saat ini
                 </p>
-                <p>
+                <p data-aos={'fade-up'}>
                     perkembangan teknologi yang semakin pesat tentu saja harus diimbangi dengan penggunaan jaringan interent stabil agar pertukaran informasi dapat dijalankan dengan cepat tanpa ada jeda waktu yang mengganggu
                 </p>
-                <Button>Get In Touch</Button>
+                <Button data-aos={'fade-up'}>Get In Touch</Button>
             </Text>
         </Wrapper>
     )
