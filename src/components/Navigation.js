@@ -37,17 +37,16 @@ const Navigation = () => {
             <Nav id="nav">
                 <ul>
                     <li>
-                        <ButtonNav>Home</ButtonNav>
+                        <ButtonNav href="/">Home</ButtonNav>
                     </li>
                     <li>
-                        <ButtonNav>About</ButtonNav>
+                        <ButtonNav href="/">About</ButtonNav>
                     </li>
                     <li>
-                        <ButtonNav>Partner</ButtonNav>
-
+                        <ButtonNav href="/">Partner</ButtonNav>
                     </li>
                     <li>
-                        <ButtonNav>Carreer</ButtonNav>
+                        <ButtonNav href="/">Carreer</ButtonNav>
                     </li>
                 </ul>
             </Nav>
