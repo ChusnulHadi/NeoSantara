@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { useState } from "react";
-// import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import { color } from "./colors";
 
@@ -23,7 +22,7 @@ const Navigation = () => {
         <Wraper>
             <div className="top">
                 <Logo>
-                    <Link to="Home">
+                    <Link to="/">
                         <img src="/assets/images/logoNSS.png" alt="Neo Santara Solusi" />
                     </Link>
                 </Logo>
@@ -38,17 +37,17 @@ const Navigation = () => {
             <Nav id="nav">
                 <ul>
                     <li>
-                        <Link to="Home">Home</Link>
-                        {/* <a href="Home">Home</a> */}
+                        <ButtonNav>Home</ButtonNav>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <ButtonNav>About</ButtonNav>
                     </li>
                     <li>
-                        <a href="#">Partner</a>
+                        <ButtonNav>Partner</ButtonNav>
+
                     </li>
                     <li>
-                        <a href="#">Carrer</a>
+                        <ButtonNav>Carreer</ButtonNav>
                     </li>
                 </ul>
             </Nav>
@@ -60,12 +59,13 @@ export default Navigation;
 
 const Wraper = styled.div`
     overflow: hidden;
-    /* width: 100vw; */
+    width: calc(100vw - 3em);
     margin: 1.5em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    position: relative;
+    position: absolute;
     z-index: 10;
 
     /* glassmorphism effect */
@@ -81,7 +81,7 @@ const Wraper = styled.div`
         justify-content: space-between;
     }
 
-    @media (min-width: 500px) {
+    @media (min-width: 600px) {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -104,17 +104,17 @@ const Button = styled.div`
         cursor: pointer;
     }
 
-    @media (min-width : 500px) {
+    @media (min-width : 600px) {
         display: none;
     }
     
 `;
 const Logo = styled.div`
 
-    margin: 0.5em 1em;
+    margin: auto 1em;
 
     img {
-        height: 3em;
+        max-width: 10em; 
     }
 
     &:hover {
@@ -135,31 +135,21 @@ const Nav = styled.nav`
         margin: 0;
         text-align: center;
 
-        background-color: ${color.darkblue};
+        position: relative;
+        z-index: 11;
+
+        border-top: 1px solid black;
 
         li {
             list-style-type:none;
 
             padding: 0.5em 0;
             margin: 0 0;
-
-            transition: 0.3s ease-in-out;
-
-            &:hover {
-                background-color: orange;
-                cursor: pointer;
-            }
-            a {
-                text-decoration:none;
-                color:white;
-                
-                padding-bottom: 0.5em;
-            }
         }
     }
 
     /* desktop view */
-    @media (min-width: 500px) {
+    @media (min-width: 600px) {
         display: flex !important;
         flex-direction: row;
         justify-content: space-between;
@@ -167,9 +157,11 @@ const Nav = styled.nav`
         ul {
             background-color: transparent;
             margin: 1.5em;
+
+            border-top: none;
             li {
                 display: inline;
-                margin: 2em 1em;
+                margin: 2em 0.5em;
 
                 &:hover {
                     background-color: transparent;
@@ -188,5 +180,49 @@ const Nav = styled.nav`
                 }
             }
         }
+    }
+`
+
+const ButtonNav = styled.button`
+    width: 128px;
+    height: 1.5em;
+    font-size:1em;
+    cursor:pointer;
+    border:none;
+    outline: none;
+    background: transparent;
+    color:black;
+    transition: all 0.5s;
+    z-index:1;
+    position: relative;
+
+    font-family: 'Rubik';
+
+    &::before {
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 2.5px;
+        height: 100%;
+        background-color:black;
+        border-radius: 5px;
+        z-index: -1;
+        transition: all 0.5s;
+        }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    &:hover {
+        color: white;
+    }
+    &:active::before {
+        background: #b9b9b9;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
     }
 `

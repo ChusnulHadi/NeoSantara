@@ -1,23 +1,15 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import Home from './components/Home';
 import Navigation from './components/Navigation';
 function App() {
   return (
     <div className="App">
       <Navigation />
-      <Home>
-        <img src='/assets/images/datacenter.jpg' alt='datacenter'></img>
-      </Home>
+      <Home />
     </div>
   );
 }
 
 export default App;
 
-export const Home = styled.div`
-    position:absolute;
-    top:0;
-    img {
-      width: 100vw;
-    }
-`
 
