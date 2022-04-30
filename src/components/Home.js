@@ -25,7 +25,7 @@ export default Home;
 const Wrapper = styled.section`
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.125)),  url('./assets/images/home-img.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.125)),  url('./assets/images/home-img.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
