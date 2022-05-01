@@ -1,9 +1,10 @@
 import 'aos';
+import Link from 'react-scroll/modules/components/Link';
 import styled from 'styled-components'
 // import data-aos from AOS
 const Home = () => {
     return (
-        <Wrapper>
+        <Wrapper id='home'>
             <Text>
                 <h1 data-aos={'fade-up'}>
                     neo santara solusi
@@ -14,7 +15,9 @@ const Home = () => {
                 <p data-aos={'fade-up'}>
                     perkembangan teknologi yang semakin pesat tentu saja harus diimbangi dengan penggunaan jaringan interent stabil agar pertukaran informasi dapat dijalankan dengan cepat tanpa ada jeda waktu yang mengganggu
                 </p>
-                <Button data-aos={'fade-up'}>Get In Touch</Button>
+                <Link to='about' spy={true} smooth={true} >
+                    <Button data-aos={'fade-up'}>Get In Touch</Button>
+                </Link>
             </Text>
         </Wrapper>
     )

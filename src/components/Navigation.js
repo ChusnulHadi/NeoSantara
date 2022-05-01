@@ -3,7 +3,6 @@ import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { color } from "./colors";
 
 
 const Navigation = () => {
@@ -22,7 +21,7 @@ const Navigation = () => {
         <Wraper>
             <div className="top">
                 <Logo>
-                    <Link to="/">
+                    <Link to="home" spy={true} smooth={true}>
                         <img src="/assets/images/logoNSS.png" alt="Neo Santara Solusi" />
                     </Link>
                 </Logo>
@@ -37,16 +36,24 @@ const Navigation = () => {
             <Nav id="nav">
                 <ul>
                     <li>
-                        <ButtonNav href="/">Home</ButtonNav>
+                        <Link to="home" spy={true} smooth={true}>
+                        <ButtonNav>Home</ButtonNav>
+                        </Link>
                     </li>
                     <li>
-                        <ButtonNav href="/">About</ButtonNav>
+                        <Link to="about" spy={true} smooth={true}>
+                            <ButtonNav>About</ButtonNav>
+                        </Link>
                     </li>
                     <li>
-                        <ButtonNav href="/">Services</ButtonNav>
+                        <Link to="services" spy={true} smooth={true}>
+                        <ButtonNav>Services</ButtonNav>
+                        </Link>
                     </li>
                     <li>
-                        <ButtonNav href="/">Carreer</ButtonNav>
+                        <Link to="carreer" spy={true} smooth={true}>
+                        <ButtonNav>Carreer</ButtonNav>
+                        </Link>
                     </li>
                 </ul>
             </Nav>
@@ -164,18 +171,6 @@ const Nav = styled.nav`
 
                 &:hover {
                     background-color: transparent;
-                }
-
-                a {
-                    color: ${color.darkblue};
-                    &:hover {
-                        font-weight: bold;
-                        color: ${color.orange};
-
-                        transition: 0.1s ease-in;
-
-                        border-bottom: 1.5px solid ${color.orange};
-                    }
                 }
             }
         }

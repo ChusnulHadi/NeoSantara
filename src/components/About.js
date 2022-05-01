@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import 'aos';
 const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id='about'>
             <h1 data-aos={'fade-up'}>kami berfokus pada anda!</h1>
             <p data-aos={'fade-up'}>
                 bagi kami, pelanggan adalah prioritas utama
@@ -157,6 +157,9 @@ const Left = styled.div`
 
     @media (max-width: 600px) {
         width: 100%;
+        p {
+            padding: 0;
+        }
     }
 
 `
@@ -186,6 +189,9 @@ const Right = styled.div`
 
     @media (max-width: 600px) {
         width: 100%;
+        p {
+            padding:0;
+        }
     }
 `
 
