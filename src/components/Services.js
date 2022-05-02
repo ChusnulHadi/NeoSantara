@@ -61,8 +61,6 @@ export default Services;
 
 const Wrapper = styled.section`
     width: 100vw;
-
-    
 `
 
 const Title = styled.div`

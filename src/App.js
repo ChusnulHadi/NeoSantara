@@ -4,6 +4,7 @@ const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const Navigation = React.lazy(() => import('./components/Navigation'));
 const Services = React.lazy(() => import('./components/Services'));
+const Footer = React.lazy(() => import('./components/Footer'));
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Home />
         <About />
         <Services />
+        <Footer />
       </Suspense>
     </div>
   );
