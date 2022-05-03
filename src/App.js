@@ -8,10 +8,6 @@ const Footer = React.lazy(() => import('./components/Footer'));
 
 function App() {
 
-  useEffect(() => {
-    console.log('mounted')
-  }, []);
-
   return (
     <div className="App">
       <Suspense fallback={<div className="loader"></div>} >

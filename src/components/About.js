@@ -27,9 +27,9 @@ const About = () => {
                     </Left>
                     <Right data-aos={'fade-up'}>
                         <p>
-                            <important>NEO SANTARA SOLUSI</important> adalah perusahan yang bergerak di bidang penyedia layanan internet dan mengatasi masalah IT di indonesia. 
+                            NEO SANTARA SOLUSI adalah perusahan yang bergerak di bidang penyedia layanan internet dan mengatasi masalah IT di indonesia. 
                             <br />
-                            <important>NEO SANTARA SOLUSI</important> menyediakan produk dan layanan untuk kebutuhan IT meliputi: penyediaan layanan internet, computer support, pengembangan software, konfigurasi jaringan 
+                            NEO SANTARA SOLUSI menyediakan produk dan layanan untuk kebutuhan IT meliputi: penyediaan layanan internet, computer support, pengembangan software, konfigurasi jaringan 
                         </p>
                         <p>
                             kami berdedikasi untuk menyediakan layanan terbaik untuk memenuhi kebutuhan digital anda. kami akan terus memberikan inovasi-inovasi baru untuk memastikan kualitas teknologi yang anda gunakan bukan hanya dapat dinikmati di kota besar di indonesia
