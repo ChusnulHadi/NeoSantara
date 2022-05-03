@@ -37,7 +37,7 @@ const Navigation = () => {
                 <ul>
                     <li>
                         <Link to="home" spy={true} smooth={true}>
-                        <ButtonNav>Home</ButtonNav>
+                            <ButtonNav>Home</ButtonNav>
                         </Link>
                     </li>
                     <li>
@@ -47,12 +47,12 @@ const Navigation = () => {
                     </li>
                     <li>
                         <Link to="services" spy={true} smooth={true}>
-                        <ButtonNav>Services</ButtonNav>
+                            <ButtonNav>Services</ButtonNav>
                         </Link>
                     </li>
                     <li>
                         <Link to="carreer" spy={true} smooth={true}>
-                        <ButtonNav>Carreer</ButtonNav>
+                            <ButtonNav>Carreer</ButtonNav>
                         </Link>
                     </li>
                 </ul>
@@ -60,7 +60,6 @@ const Navigation = () => {
         </Wraper>
     )
 }
-
 export default Navigation;
 
 const Wraper = styled.header`
@@ -71,7 +70,7 @@ const Wraper = styled.header`
     flex-direction: column;
     justify-content: space-between;
 
-    position: absolute;
+    position: fixed;
     z-index: 10;
 
     /* glassmorphism effect */
@@ -108,6 +107,11 @@ const Button = styled.div`
     &:hover {
         color: white;
         cursor: pointer;
+    }
+
+    &:active {
+        color: white;
+        background-color: black;
     }
 
     @media (min-width : 600px) {
