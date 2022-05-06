@@ -15,7 +15,7 @@ const Home = () => {
                 <p data-aos={'fade-up'}>
                     perkembangan teknologi yang semakin pesat tentu saja harus diimbangi dengan penggunaan jaringan interent stabil agar pertukaran informasi dapat dijalankan dengan cepat tanpa ada jeda waktu yang mengganggu
                 </p>
-                <Link to='about' spy={true} smooth={true} >
+                <Link to='about' spy={true} smooth={true} offset={-128}>
                     <Button data-aos={'fade-up'}>Get In Touch</Button>
                 </Link>
             </Text>
