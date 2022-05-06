@@ -85,7 +85,7 @@ const Wrapper = styled.section`
 
     @media (max-width: 600px) {
         p {
-            text-align: justify;
+            text-align: left;
             padding: 0 2em;
         }
     }
@@ -159,6 +159,7 @@ const Left = styled.div`
         width: 100%;
         p {
             padding: 0;
+            text-align: left;
         }
     }
 
@@ -191,6 +192,7 @@ const Right = styled.div`
         width: 100%;
         p {
             padding:0;
+            text-align: left;
         }
     }
 `
