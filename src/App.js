@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import './loader.css';
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
