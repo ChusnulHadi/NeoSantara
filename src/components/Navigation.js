@@ -41,17 +41,17 @@ const Navigation = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="about" spy={true} smooth={true}>
+                        <Link to="about" spy={true} smooth={true} offset={-128}>
                             <ButtonNav>About</ButtonNav>
                         </Link>
                     </li>
                     <li>
-                        <Link to="services" spy={true} smooth={true}>
+                        <Link to="services" spy={true} smooth={true} offset={-128}>
                             <ButtonNav>Services</ButtonNav>
                         </Link>
                     </li>
                     <li>
-                        <Link to="carreer" spy={true} smooth={true}>
+                        <Link to="carreer" spy={true} smooth={true} offset={-128}>
                             <ButtonNav>Carreer</ButtonNav>
                         </Link>
                     </li>
