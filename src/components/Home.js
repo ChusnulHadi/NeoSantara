@@ -13,7 +13,7 @@ const Home = () => {
                     internet service provider yang menyediakan layanan internet dedicated untuk memenuhi kebutuhan digital anda di era modern saat ini
                 </p>
                 <p data-aos={'fade-up'}>
-                    perkembangan teknologi yang semakin pesat tentu saja harus diimbangi dengan penggunaan jaringan interent stabil agar pertukaran informasi dapat dijalankan dengan cepat tanpa ada jeda waktu yang mengganggu
+                    perkembangan teknologi yang semakin pesat tentu saja harus diimbangi dengan penggunaan jaringan internet stabil agar pertukaran informasi dapat dijalankan dengan cepat tanpa ada jeda waktu yang mengganggu
                 </p>
                 <Link to='about' spy={true} smooth={true} offset={-128}>
                     <Button data-aos={'fade-up'}>Get In Touch</Button>

@@ -1,18 +1,39 @@
+// import Link from 'react-scroll/modules/components/Link';
+import Link from 'react-scroll/modules/components/Link';
 import styled from 'styled-components';
+
+// const email = () => {
+//     return(
+//         <Link to="mailto:external@neosantarasolusi.net" />
+//     )
+// }
 
 const Footer = () => {
     return (
         <Wrapper>
             <Title>
-                <h1>neo santara solusi</h1>
+                <Link to='home' smooth={true} spy={true}>
+                    <h1>neo santara solusi</h1>
+                </Link>
             </Title>
             <Links>
-                <button className='cta' href="mailto:external@neosantarasolusi.net">
+                <button className='cta' onClick={(e) => {
+                    window.location.href = "mailto:external@neosantarasolusi.net";
+                    e.preventDefault();
+                }}>
                     <span className='underline-animation'>Email</span>
+                </button>
+                <button className='cta' onClick={(e) => {
+                    window.location.href = "https://wa.me/+628113300901"
+                }}>
+                    <span className='underline-animation'>WhatsApp</span>
                 </button>
             </Links>
             <Call>
-                <button href="tel:+628113300901">
+                <button onClick={(e) => {
+                    window.location.href = "tel:+628113300901";
+                    e.preventDefault();
+                }}>
                     +62 811 3300 901
                 </button>
             </Call>
@@ -41,6 +62,10 @@ const Title = styled.div`
 width: 100%;
 text-transform: uppercase;
 font-family: 'MOONFARK';
+
+&:hover {
+    cursor:pointer;
+}
 `
 const Links = styled.div`
 width: 100%;

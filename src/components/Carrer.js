@@ -5,6 +5,7 @@ const Card = (props) => {
     const body = props.body;
     const buttonText = props.buttonText;
     const className = props.className;
+    const mailto = props.href;
     return (
         <>
             <Cardboard className={className}>
@@ -12,7 +13,10 @@ const Card = (props) => {
                     <p className='title'>{title}</p>
                     <p className='body'>{body}</p>
                 </div>
-                <button className='button' href="mailto:external@neosantarasolusi.net">
+                <button className='button' onClick={(e) => {
+                    window.location.href = `mailto:${mailto}`;
+                    e.preventDefault();
+                }} >
                     {buttonText}
                 </button>
             </Cardboard>
@@ -31,7 +35,7 @@ const Carrer = () => {
                 <p>kami memberikan peluang ke generasi bangsa untuk dapat bergabung bersama kami mengembangkan pelayanan yang dapat bermanfaat untuk masyarakat</p>
             </Text>
             <Content>
-                <Card className='marketing' title='Marketing' body='Fresh graduate yang ingin berkarir di bidang marketing' buttonText='Make Call' image='./assets/images/visi-img.webp' />
+                <Card className='marketing' title='Marketing' body='Fresh graduate yang ingin berkarir di bidang marketing' buttonText='Make Call' mailto="external@neosantarasolusi.net" image='./assets/images/visi-img.webp' />
             </Content>
         </Wrapper>
     );
