@@ -111,7 +111,7 @@ const Button = styled.div`
 
     &:active {
         color: white;
-        background-color: black;
+        /* background-color: black; */
     }
 
     @media (min-width : 600px) {
