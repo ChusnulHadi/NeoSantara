@@ -20,9 +20,6 @@ const Card = (props) => {
                     {buttonText}
                 </button>
             </Cardboard>
-            {/* <div className='popup'>
-
-        </div> */}
         </>
     )
 }
@@ -32,10 +29,11 @@ const Carrer = () => {
         <Wrapper id='carreer'>
             <Text>
                 <h3>Menjadi bagian dari kami</h3>
-                <p>kami memberikan peluang ke generasi bangsa untuk dapat bergabung bersama kami mengembangkan pelayanan yang dapat bermanfaat untuk masyarakat</p>
+                <p>kami memberikan kesempatan anda untuk berkembang bersama kami menyediakan akses digital teknologi untuk masyarakat luas</p>
             </Text>
             <Content>
-                <Card className='marketing' title='Marketing' body='Fresh graduate yang ingin berkarir di bidang marketing' buttonText='Make Call' mailto="external@neosantarasolusi.net" image='./assets/images/visi-img.webp' />
+                <Card className='marketing' title='Senior Marketing' body='membantu merancang perkembangan pasar' buttonText='Make Call' mailto="external@neosantarasolusi.net" image='./assets/images/visi-img.webp' />
+                <Card className='teknisi' title='Network Technician' body='merancang dan membangun sistem jaringan' buttonText='Make Call' mailto="external@neosantarasolusi.net" image='./assets/images/visi-img.webp' />
             </Content>
         </Wrapper>
     );
@@ -91,9 +89,16 @@ const Content = styled.div`
         background-size: cover !important;
     }
 
+    .teknisi {
+        background: linear-gradient(#00000040, #00000040), url('./assets/images/teknisi-img.webp') no-repeat center !important;
+        background-size: cover !important;
+    }
+
     @media screen and (max-width: 600px) {
         width: 100%;
         justify-content: center;
+        flex-direction: column;
+        /* margin: 1em auto; */
     }
 `
 
@@ -106,6 +111,8 @@ const Cardboard = styled.div`
         border: 2px solid #c3c6ce;
         transition: 0.5s ease-out;
         overflow: visible;
+
+        margin: 0 2em;
 
 
         .card-details {
@@ -151,6 +158,10 @@ const Cardboard = styled.div`
                 cursor: pointer;
             }
         }
+
+        @media screen and (max-width: 600px) {
+            margin: 1em auto;
+        } 
 
 
 

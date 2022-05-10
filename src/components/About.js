@@ -47,7 +47,7 @@ const About = () => {
                         </p>
                         <h2>Misi</h2>
                         <p>
-                            misi kita adalah menyediakan akses digital teknologi untuk masyarakat luas.
+                            misi kami adalah menyediakan akses digital teknologi untuk masyarakat luas.
                             <br /><br />
                             membangun hubungan baik dengan komunitas lokal untuk meningkatkan potensi dari komunitas individu
                             <br /><br />
