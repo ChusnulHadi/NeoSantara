@@ -105,7 +105,7 @@ const Button = styled.div`
 
 
     &:hover {
-        color: white;
+        color: blue;
         cursor: pointer;
     }
 
