@@ -43,11 +43,11 @@ const About = () => {
                     <Left data-aos={'fade-up'}>
                         <h2>Visi</h2>
                         <p>
-                            visi kami adalah merealisasikan sebuah jaringan internet untuk mendukung perkembangan dari teknologi digital di seluruh pelosok negeri
+                            merealisasikan sebuah jaringan internet guna mendukung perkembangan teknologi digital di seluruh pelosok negeri
                         </p>
                         <h2>Misi</h2>
                         <p>
-                            misi kami adalah menyediakan akses digital teknologi untuk masyarakat luas.
+                            menyediakan akses digital teknologi untuk masyarakat luas.
                             <br /><br />
                             membangun hubungan baik dengan komunitas lokal untuk meningkatkan potensi dari komunitas individu
                             <br /><br />
