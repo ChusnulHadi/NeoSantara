@@ -1,6 +1,7 @@
 {
   "name": "landingpage-neosantara",
   "version": "0.1.0",
+  "homepage": "https://neosantarasolusi.net",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

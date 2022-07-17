@@ -2,12 +2,6 @@
 import Link from 'react-scroll/modules/components/Link';
 import styled from 'styled-components';
 
-// const email = () => {
-//     return(
-//         <Link to="mailto:external@neosantarasolusi.net" />
-//     )
-// }
-
 const Footer = () => {
     return (
         <Wrapper>
@@ -16,25 +10,18 @@ const Footer = () => {
                     <h1>neo santara solusi</h1>
                 </Link>
             </Title>
-            <Links>
-                <button className='cta' onClick={(e) => {
-                    window.location.href = "mailto:external@neosantarasolusi.net";
+            <Call>
+                <button onClick={(e) => {
+                    window.location.href = "mailto:marketing@neosantarasolusi.net";
                     e.preventDefault();
                 }}>
-                    <span className='underline-animation'>Email</span>
+                    Email : marketing@neosantarasolusi.net
                 </button>
-                <button className='cta' onClick={(e) => {
-                    window.location.href = "https://wa.me/+628113300901"
-                }}>
-                    <span className='underline-animation'>WhatsApp</span>
-                </button>
-            </Links>
-            <Call>
                 <button onClick={(e) => {
                     window.location.href = "tel:+628113300901";
                     e.preventDefault();
                 }}>
-                    +62 811 3300 901
+                    Call : +62 811 3300 901
                 </button>
             </Call>
             <Credits>
@@ -67,35 +54,16 @@ font-family: 'MOONFARK';
     cursor:pointer;
 }
 `
-const Links = styled.div`
-width: 100%;
 
-button {
-    background: none;
-    border: none;
-    text-transform: uppercase;
-    letter-spacing: 0.125em;
-    transition: all 0.3s;
-
-    margin: 0..5em;
-
-    &:hover {
-        cursor: pointer;
-        font-weight: bold;
-
-    }
-}
-`
 const Call = styled.div`
 width: 100%;
 button {
     background: none;
     border: none;
-    text-transform: uppercase;
     letter-spacing: 0.125em;
     transition: 0.3s;
 
-    margin: 0.5em;
+    margin: 0.25em 0.75em;
 
     &:hover {
         cursor: pointer;

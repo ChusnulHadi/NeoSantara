@@ -164,12 +164,5 @@ const Cardboard = styled.div`
         } 
 
 
-
-        /* .popup {
-            display: flex;
-            position: fixed;
-            width: 80vw;
-            height: 80vh
-        } */
     `
 
